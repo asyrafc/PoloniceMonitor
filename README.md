@@ -1,22 +1,16 @@
-# Project Discontinued
-Please be aware that this project is not actively maintained anymore.
+# Poloniex trade bot
 
-# Poloniex API .NET [![Build status](https://ci.appveyor.com/api/projects/status/dnp9i3t6sexv9tpa?svg=true)](https://ci.appveyor.com/project/kripod/poloniexapi-net)
-This project makes your Microsoft .NET applications able to interact with the Application Programming Interface (API) of [Poloniex][].
-The class library is written in [C#][], and the demo project uses [XAML][] ([WPF][]). A [NuGet package of the project][] is also available.
+A Poloniex trading bot prototype.
 
-[Poloniex]: https://www.poloniex.com
-[C#]: http://wikipedia.org/wiki/C_Sharp_%28programming_language%29
-[XAML]: http://wikipedia.org/wiki/XAML
-[WPF]: http://wikipedia.org/wiki/Windows_Presentation_Foundation
-[NuGet package of the project]: https://www.nuget.org/packages/PoloniexApi.Net
+How it works:
+=============
+1. Retrieve realtime data every second using Public REST API provided by Poloniex in the format of JSON.
+2. Format the retrieved data into tabular form.
 
-## Usage requirements
-Installing [Microsoft .NET Framework 4.5][] (or higher) is a requirement for both end-users and developers.
+Things to be implemented:
+=========================
+1. Trade operation using Private REST API.
+2. Private Key integration for authentication.
 
-[Microsoft .NET Framework 4.5]: http://www.microsoft.com/download/details.aspx?id=30653
-
-## About versioning
-The project uses [Semantic Versioning 2.0.0][] for keeping track of changes.
-
-[Semantic Versioning 2.0.0]: http://semver.org/spec/v2.0.0.html
+## Credit
+This project is based on https://github.com/kripod/PoloniexApi.Net
